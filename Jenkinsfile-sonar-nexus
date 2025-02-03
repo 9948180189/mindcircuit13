@@ -25,7 +25,7 @@ pipeline {
 		stage('Build Artifact AND PUSHING TO NEXUS') {
             steps {
                 echo 'Build Artifact with maven build tool'
-				sh 'mvn clean deployy'
+				sh 'mvn clean deploy'
             }
         }
 		
